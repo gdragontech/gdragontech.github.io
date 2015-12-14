@@ -1,72 +1,69 @@
-title:            Coding Dragon's Blog
-description:      This website is used to backup useful ideas, skills, and tools.
-disqus_shortname: codingdragonsblog
-reading_time:     true
-words_per_minute: 200
-# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
-# When testing locally leave blank or use http://localhost:4000
-url: http://gdragontech.github.io
+### Site info:
+title: Freshman21
+tagline: Another Jekyll theme, Freshman twenty-first
+author: Lijia Yu
+email: yu@lijiayu.net
+description: "Freshman21 is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
+keywords: "Jekyll, theme, Freshman21"
+baseurl: "/freshman21" # the subpath of your site, e.g. /blog
+url: "http://yulijia.net/freshman21" # the base hostname & protocol for your site
+locale: en_US
 
-# Owner/author information
-owner:
-  name:           Long Gong
-  avatar:         avatar.JPG
-  bio:            "Hi, I am Long, a CS PhD@GaTech."
-  email:          gonglong.gl@qq.com
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # google plus id, include the '+', eg +mmistakes
-  google_plus:    +yourid
+### Personal info and site tools info:
+twitter_username: yulijia
+github_username:  yulijia
+disqus_shortname: freshman21
+favicon:     "/images/favicon.ico"
+aboutme: Hi, this is Lijia Yu. I made the Freshman21 theme. Please enjoy it. # these are shown on aboutme-sidebar.
+aboutme_photo: https://i.imgur.com/Mdc4szJl.jpg # your photo.
 
-# Background image to be tiled on all pages
-background: 
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+### Site setting:
+ShowContactInfo: "True" # Personal Info (twitter,github,email) can be seen on aboutme-sidebar, those info only shown when ShowContactInfo == True
+default_column: "two" # blog style: two columns, if default_column != "two", you will see a one column blog.
+default_locale: "en" # blog sidebar language set, only include: English(en) and Chinese (cn)
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
-future:      true
+locales:
+    en:
+      Aboutme: "About Me"
+      Archives: "Archives"
+      Blogroll: "Blogroll"
+      Categories: "Categories"
+      Copyright_Notice: "Copyright Notice"
+      Recent_Posts: "Recent Posts"
+      Tags: "Tags"
+      Previous: "Older"
+      Next: "Newer"
+      PostedInCategories: "Posted in"
+      Taggedwith: "and tagged"  
+      PostDate: "on "
+    cn:
+      Aboutme: "关于我"
+      Archives: "存档"
+      Blogroll: "良师益友"        
+      Categories: "分类目录"    
+      Copyright_Notice: "版权声明"
+      Recent_Posts: "近期文章"
+      Tags: "标签" 
+      Previous: "前一页"
+      Next: "后一页"
+      PostedInCategories: "目录:"   
+      Taggedwith: "| 标签:"
+      PostDate: "| 发表时间: "
+
+
+### your Blogroll info, only name can shown on the page.
+
+Blogroll:
+    - name: Freshman21
+      href: http://yulijia.net/freshman21
+      title: Another Jekyll blog theme
+    - name: author's website
+      href: http://yulijia.net/
+      title: Lijia Yu's website
+
+
+### Build settings
+markdown: kramdown
 highlighter: pygments
-# pygments: true
-markdown:    KramdownPygments
-gems:
-  - jekyll-sitemap
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
-
-# Amount of post to show on home page
 paginate: 5
-
-kramdown:
-  input: GFM
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  default_lang: python
-#  use_coderay: true
-
-#  coderay:
-#    coderay_line_numbers: nil
-#    coderay_line_numbers_start: 1
-#    coderay_tab_width: 4
-#    coderay_bold_every: 10
-#    coderay_css: style
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
